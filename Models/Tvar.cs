@@ -7,12 +7,13 @@
         public int Y { get; set; }
 
         public string barva { get; set; } = "blue";
+        public bool Vybrany { get; set; } 
 
-            public void Posun(int dx, int dy)
+        public void Posun(int dx, int dy)
         {
             X += dx;
             Y += dy;
         }
-        public abstract void Nakresli();
+        public abstract string Nakresli();
     }
 }
